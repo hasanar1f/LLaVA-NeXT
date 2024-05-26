@@ -25,6 +25,7 @@ from llava.utils import rank0_print
 
 
 def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="auto", attn_implementation="flash_attention_2", customized_config=None, **kwargs):
+    print(" ################################## Loading llava model using the latest llava-next repo #################################")
     kwargs = {"device_map": device_map}
 
     if load_8bit:
